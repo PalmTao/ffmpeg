@@ -364,8 +364,8 @@ RUN \
 FROM        base AS release
 MAINTAINER  Julien Rottenberg <julien@rottenberg.info>
 
-CMD         ["--help"]
-ENTRYPOINT  ["ffmpeg"]
+# CMD         ["--help"]
+# ENTRYPOINT  ["ffmpeg"]
 ENV         LD_LIBRARY_PATH=/usr/local/lib
 
 COPY --from=build /usr/local /usr/local/
